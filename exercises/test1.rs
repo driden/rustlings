@@ -19,3 +19,8 @@ fn verify_test() {
     assert_eq!(price1, 55);
     assert_eq!(price2, 80);
 }
+
+fn calculateprice(amount: u8) -> u8 {
+    let new_price = if amount > 40 { amount } else { 2 * amount };
+    new_price
+}
